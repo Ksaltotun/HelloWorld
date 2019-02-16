@@ -1,1 +1,1 @@
-html{outline:1px solid #000}body *{outline:1px solid purple}
+.parrent{width:200px;height:200px;outline:1px solid red;background:#ff0}.center{display:inline-block;background:#00f;padding:10%;margin:30% 10% 10% 20%}
