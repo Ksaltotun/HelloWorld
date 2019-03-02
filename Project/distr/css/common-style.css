@@ -1,1 +1,1 @@
-html{outline:1px solid #000}body *{outline:1px solid purple}
+body{margin:0;padding:0}.container{position:relative;width:device-width;outline:1px solid red}.left,.main,.right{display:inline-block;height:3000px;outline:1 px solid red}.left{position:fixed;margin:0;width:200px;background-color:bisque}.main{position:absolute;left:200px;right:200px;background-color:#7fffd4}.right{position:fixed;right:0;width:200px;background-color:#00f}
