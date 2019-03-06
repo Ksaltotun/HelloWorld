@@ -1,1 +1,1 @@
-html{outline:1px solid #000}body *{outline:1px solid purple}
+body{margin:0;padding:0}.wrapper{width:1200px;height:500px;background-color:#ff0}.item{width:800px;height:600px;background-color:red}@media (max-width:640px){.wrapper{width:640px;height:400px;background-color:#00f}.item{width:320px;height:200px;background-color:green}}@media (min-width:320px) and (max-width:500px){.wrapper{width:200px;height:200px;background-color:#0ff}.item{display:none}}
