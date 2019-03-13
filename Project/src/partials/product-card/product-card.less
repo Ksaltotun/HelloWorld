@@ -1,12 +1,23 @@
-.product-item_prewiews-wrapper,
- .product-item_img{
-     display: inline-block;
+.product-item__images {
+    display: table-row;
+}
+.product-item__img{
     
+    outline: 1px solid red;
 }
-.product-item_prewiews-wrapper{
+
+
+.product-item__previews-wrapper,
+.product-item__img {
+    display: table-cell;
+}
+
+.product-item__previews-wrapper {
     width: 25%;
-    outline:1px solid red;
+    outline: 1px solid red;
+    vertical-align: top;
 }
-.product-item_img{
-    width: 74%;
+.pic{
+    max-width: 100%;
+    max-height: 100%;
 }
