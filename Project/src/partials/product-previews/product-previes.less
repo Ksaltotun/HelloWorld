@@ -2,3 +2,38 @@
     max-width: 100%;
     min-height: 100%;
 }
+
+.product-preview {
+    position: relative;
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    &--big {
+        display: none;
+        padding: 15px;
+        border: 1px solid #000;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 600px;
+        z-index: 1;
+        background-color: rgba(211, 211, 211, 0.253);
+
+        img {
+            border: 1px solid black;
+        }
+    }
+
+    &:hover .product-preview--big {
+        opacity: 0.9;
+        display: block;
+    }
+
+    &:hover {
+        opacity: 0.2;
+    }
+
+
+}

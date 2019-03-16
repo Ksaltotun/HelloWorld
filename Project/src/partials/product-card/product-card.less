@@ -1,23 +1,22 @@
-.product-item__images {
-    display: table-row;
-}
-.product-item__img{
-    
-    outline: 1px solid red;
-}
+.product-item {
+    &__images {
+        display: table-row;
+    }
 
+    &__previews-wrapper,
+    &__img {
+        display: table-cell;
+    }
 
-.product-item__previews-wrapper,
-.product-item__img {
-    display: table-cell;
-}
-
-.product-item__previews-wrapper {
-    width: 25%;
-    outline: 1px solid red;
-    vertical-align: top;
-}
-.pic{
-    max-width: 100%;
-    max-height: 100%;
+    &__previews-wrapper {
+        width: 25%;
+        vertical-align: top;
+    }
+     &__img img{
+         max-width: 100%;
+         max-height: 100%;
+     }
+     &__img{
+         background-color: rgba(190, 187, 187, 0.164);
+     }
 }
