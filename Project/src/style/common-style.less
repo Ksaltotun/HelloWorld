@@ -1,0 +1,61 @@
+html * {
+    outline: 1px solid red;
+  }
+  
+  body {
+    padding-top: 50px;
+  }
+  
+  label {
+    display: block;
+  }
+  
+  form {
+    margin: 50px;
+    outline: 1px solid red;
+  }
+  [type="checkbox"] {
+    display: none;
+  }
+  [type="checkbox"]:checked ~ label {
+    color: red;
+  }
+  
+  .accordion {
+    width: 500px;
+    margin: 0 auto;
+    
+    &__capture,
+    &__description {
+      border: 1px solid #000;
+    }  
+  }
+  
+  input {
+    display: none;
+  }
+  
+  #close:checked ~ .accordion__description {
+    height: 0px;
+    overflow: hidden;
+  }
+  
+  #close:checked ~ .accordion__capture [for="close"] {
+    display: none;
+  }
+  
+  #open:checked ~ .accordion__capture [for="open"] {
+    display: none;
+  }
+  
+  .accordion__capture {
+    background-color: yellow;
+    transition: all .5s linear;
+  }
+  
+  .accordion__capture:hover {
+    background-color:blue;
+    transition: all .5s linear;
+  }
+  
+  

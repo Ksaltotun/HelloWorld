@@ -1,15 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/common-style.css">
-    <title>Web page</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/common-style.css">
+  <title>Hello world</title>
 </head>
 <body>
-    @@include(".\partials\main-menu\_menu.html")
-    
+  <form action="/fff" method="post">
+    <label for="inp">
+        login
+        <input type="text" name="inp" id="inp">
+    </label>
+    <input type="checkbox" name="checkbox" id="check-box">
+    <label for="check-box">
+      Checkbox
+    </label>
+    <label for="radio">
+        radio 1
+        <input type="radio" name="radio" id="radio" value="radio1">
+    </label>
+    <label for="radio2">
+        radio 2
+        <input type="radio" name="radio" id="radio2" value="radio2">
+    </label>
+    <label for="radio3">
+        radio 3
+        <input type="radio" name="radio" id="radio3" value="radio3">
+    </label>
+    <input type="submit" value="submit">
+  </form>
 
+  <div class="accordion">
+    <input type="radio" name="accordion" id="open">
+    <input type="radio" name="accordion" id="close" checked>
+    <div class="accordion__capture">
+      <label for="open">open</label>
+      <label for="close">close</label>
+      Accordion
+    </div>
+    <div class="accordion__description">
+        Aliquam eu nunc. Praesent porttitor, 
+        nulla vitae posuere iaculis, arcu nisl 
+        dignissim dolor, a pretium mi sem ut ipsum.
+         Phasellus blandit leo ut odio.
+    </div>
+  </div>
 </body>
 </html>
