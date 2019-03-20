@@ -1,17 +1,50 @@
-@import "../partials/product-card/product-card.less";
-@import "../partials/product-previews/product-previes.less";
-.products {
+html{
     display: flex;
+    background-color: bisque;
+    height: 4000px;
+    
 }
-.fa-chart-area{
-    font-size: 50em;
-    color: red;
+header{
+    display: block;
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    text-align: justify;
 }
-.fa-dragon{
-    font-size: 30em;
-    color: gold;
+.mainMenuBar {
+    position: fixed;
+    top: 20%;
+    width: 200px;
+    background-color: white;
+    color: rgb(9, 66, 66);
 }
-.fa-dog{
-    font-size: 20em;
-    color: red;
+
+.mainMenuBar a{
+    text-decoration: none;
+    
 }
+li{
+    list-style-type:none;
+}
+.subMenuBar{
+    display: none;
+    cursor: pointer;
+}
+.mainMenuBar li:hover {
+        .subMenuBar{
+            display: block;
+            
+
+        }
+ }
+.p0 li:hover{
+     list-style-image: url('../img/dot.jpg');
+ }
+ .div{
+     height: 1000px;
+     
+ }
+  
+ 
+ 
+  
