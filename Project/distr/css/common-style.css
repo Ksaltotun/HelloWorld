@@ -1,1 +1,1 @@
-html{display:flex;background-color:bisque;height:4000px}header{display:block;position:absolute;left:50%;width:100%;text-align:justify}.mainMenuBar{position:fixed;top:20%;width:200px;background-color:#fff;color:#094242}.mainMenuBar a{text-decoration:none}li{list-style-type:none}.subMenuBar{display:none;cursor:pointer}.mainMenuBar li:hover .subMenuBar{display:block}.p0 li:hover{list-style-image:url(../img/dot.jpg)}.div{height:1000px}
+html{display:flex;background-color:bisque;height:1800px}
