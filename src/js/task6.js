@@ -103,11 +103,6 @@ function rhombus() {
     document.getElementById("draw").innerHTML += "<br>" + "<br>"
 }
 
-
-
-
-
-
 rectangle();
 right_triangle();
 equilateral_triangle();
