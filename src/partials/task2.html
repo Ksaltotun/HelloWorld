@@ -1,0 +1,46 @@
+<h3 >Task2</h3>
+<div class="task">
+        <div class="description">
+                <p>Task 2 <br>
+                        Calculate the arithmetic average value of the three integer values and 
+                        display it on the screen. <br>
+                        * create function to calculate average value of any amount of inputted numbers</p>
+         </div>
+         <div class="solution">
+                <xmp>
+                        function arithmetic_average() {
+                            var stroka = document.getElementById("input_num").value, str_mas = stroka.split(" "), summ = 0;
+                            for (i = 0; i < str_mas.length; i ++) {
+                                if (Number (str_mas[i])){
+                                    summ += Number(str_mas[i]);
+                                    ar_ar = summ / str_mas.length;
+                                    document.getElementById("exit").textContent = ar_ar;
+                                } else {
+                                    alert("Data type error! Use only numbers!");
+                                    break;
+                                }
+                             }
+                        }
+                                          
+                </xmp>
+           
+   
+                             
+       
+            </div>
+            <div class="output">
+                    <form action="">
+                        <span>Введите числа: </span>
+                        <input id="input_num" type="text" value="">
+                        <input type="button" value="Вычислить!" id="calculate" onclick="arithmetic_average()">
+                         <span>Ответ: </span> <span id="exit" ></span>
+                    </form>
+                    
+    
+                       
+            </div>
+        
+        
+
+</div>
+<script type="text/javascript" src="./js/task2.js"></script>

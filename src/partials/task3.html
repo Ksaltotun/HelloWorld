@@ -1,0 +1,51 @@
+<h3 >Task3</h3>
+<div class="task">
+        <div class="description">
+                Write a program for calculating the volume - V and the surface area - S 
+                of the cylinder. <br>
+                The volume V of the cylinder of radius-r and height-h, is calculated by 
+                the formula: V = πr 2 h. <br>
+                The area S of the surface of the cylinder is calculated by the formula: 
+                S = 2π rh + 2π r 2 = 2π r (r + h). <br>
+                The results of calculations should be displayed on the screen. <br>
+                
+                
+         </div>
+         <div class="solution">
+                <xmp>
+                        function volume_square() {
+                            var radius = document.getElementById("input_r").value, height_cyl = document.getElementById("input_h").value,  volume = 0, square = 0;
+                            if(Number(radius) && Number(height_cyl)) {
+                                radius = Number (radius);
+                                height_cyl = Number (height_cyl);
+                                volume = Math.PI * Math.pow(radius, 2) * height_cyl;
+                                square = (2 * Math.PI * radius) * (height_cyl + radius);
+                                 
+                                document.getElementById("exit_V").textContent = " Объем равен: "+ volume + " Площадь равна: " + square;
+                            } else {
+                                alert("Data type error! Use only numbers!");
+                            }
+                        }
+                        
+                                          
+                </xmp>
+         </div>
+            <div class="output">
+                    <form action="">
+                        <span>Введите радиус:</span>
+                        <input id="input_r" type="text" value=""> <br>
+                        <span>Введите высоту:</span>
+                        <input id="input_h" type="text" value="">
+                        <input type="button" value="Вычислить!" id="calculate_V" onclick="volume_square()">
+                        <br>
+                         <span>Ответ: </span> <span id="exit_V" ></span> 
+                    </form>
+                    
+    
+                       
+            </div>
+        
+        
+
+</div>
+<script type="text/javascript" src="./js/task3.js"></script>

@@ -1,0 +1,52 @@
+<h3 >Task4</h3>
+<div class="task">
+        <div class="description">
+                Given two numbers A and B, where (A &lt; B). <br>
+                Display all integer numbers in interval from A to B (including
+                borders). <br>
+                Display all odd integer values located in the numerical interval from A
+                to B (including borders).
+
+                
+                
+         </div>
+         <div class="solution">
+                <xmp>
+                        function in_range() { 
+                            var A = document.getElementById("input_A").value, B = document.getElementById("input_B").value, answer1 = "", answer2 = "";  
+                            if(Number(A) && Number(B)) {
+                                A = Number (A);
+                                B = Number (B);
+                                for(i = A; i < B + 1; i++){
+                                    answer1 += i;
+                                    if (i % 2 != 0){
+                                        answer2 += i;
+                                    }
+                                }
+                                        alert(answer1);
+                                document.getElementById("exit_num").innerHTML = " Первая последовательность: " + answer1 + " Вторая последовательность " + answer2;
+                            } else {
+                                alert("Data type error! Use only numbers!");
+                            }
+                        }
+                 </xmp>
+         </div>
+            <div class="output">
+                    <form action="">
+                        <span>Введите A:</span>
+                        <input id="input_A" type="text" value=""> <br>
+                        <span>Введите B:</span>
+                        <input id="input_B" type="text" value="">
+                        <input type="button" value="Вычислить!" id="lets_go" onclick="in_range()">
+                        <br>
+                         <span>Ответ: </span> <span id="exit_num" ></span> 
+                    </form>
+                    
+    
+                       
+            </div>
+        
+        
+
+</div>
+<script type="text/javascript" src="./js/task4.js"></script>

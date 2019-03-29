@@ -1,0 +1,71 @@
+<h3 >Task1</h3>
+<div class="task1">
+        
+        <div class="description">
+                <p>Create singular object with properties x=6, y = 15, and z = 4: <br>
+                    Perform and display the results of the following operations for these <br>
+                    properties : <br>
+                    · x += y - x++ * z ; <br>
+                    · z = -- x - y * 5 ; <br>
+                    · y /= x + 5 % z ; <br>
+                    · z = x++ + y * 5 ; <br>
+                    · x = y - x++ * z ; <br>
+                    Note: for each operation please use default values: x = 6, y = 15, and <br>
+                    z = 4, you don’t have possibility to reassign properties.</p>
+         </div>
+         <div class="solution">
+             <xmp>
+                    //создание объекта
+                    var singular_object = {
+                        x: 6,
+                        y: 15,
+                        z: 4,
+                    }
+                    // объявление функций
+                    function f1() {
+                        singular_object.x += singular_object.y - singular_object.x++ * singular_object.z;
+                        document.getElementById("f1").textContent = singular_object.x;
+                    }
+                    function f2(){
+                        singular_object.z = --singular_object.x - singular_object.y * 5; 
+                        document.getElementById("f2").textContent = singular_object.z;
+                        
+                    }
+                    function f3(){
+                        singular_object.y /= singular_object.x + 5 % singular_object.z; 
+                        document.getElementById("f3").textContent = singular_object.y;
+                        
+                    }
+                    function f4(){
+                        singular_object.z = singular_object.x ++ + singular_object.y * 5; 
+                        document.getElementById("f4").textContent = singular_object.z;
+                        
+                    }
+                    function f5(){
+                        singular_object.x = singular_object.y - singular_object.x++ * singular_object.z; 
+                        document.getElementById("f5").textContent = singular_object.x;
+                    }
+                    // вызовы функций 
+                    f1()
+                    f2()
+                    f3()
+                    f4()
+                    f5()
+                 
+             </xmp>
+        
+
+                          
+    
+         </div>
+         <div class="output">
+                Первая функция: <span id="f1"></span> <br>
+                Вторая функция: <span id="f2"></span> <br>
+                Третья функция: <span id="f3"></span> <br>
+                Четвертая функция: <span id="f4"></span> <br>
+                Пятая функция: <span id="f5"></span>
+                
+
+                   
+        </div>
+        <script type="text/javascript" src="./js/task1.js"></script> 
