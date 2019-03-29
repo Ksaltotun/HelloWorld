@@ -9,7 +9,7 @@ function in_range() {
                 answer2 += i;
             }
         }
-                alert(answer1);
+                
         document.getElementById("exit_num").innerHTML = " Первая последовательность: " + answer1 + " Вторая последовательность " + answer2;
     } else {
         alert("Data type error! Use only numbers!");

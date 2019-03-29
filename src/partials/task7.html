@@ -1,0 +1,52 @@
+<h3 >Task7</h3>
+<div class="task">
+        <div class="description">
+                Create an array of N elements, populate it with arbitrary integer
+                values. <br> Output the largest value of the array, the smallest value of
+                the array, <br> the total sum of the elements, the arithmetic mean of all
+                elements, output all odd values.
+                
+         </div>
+         <div class="solution">
+                <xmp>
+                        function number_generator(min, max) {
+                            return Math.floor(Math.random() * (max - min)) + min;
+                          }
+                        function array_n () { 
+                            var N = document.getElementById("elements").value, randon_arr = [], min = 100, max = 0, summa = 0, odd_num = [], arrifmetic_mean = 1;  
+                            if(Number(N)) {
+                                N = Number(N);
+                                for(i = 0; i < N; i++){
+                                    randon_arr.push(number_generator(1, 100));
+                                }
+                                for(i = 0; i < N ; i++){
+                                    if (max < randon_arr[i]){
+                                        max = randon_arr[i];
+                                    };
+                                    if (min > randon_arr[i] ){
+                                        min = randon_arr[i];
+                                    };
+                                    if (randon_arr[i] % 2 != 0){
+                                        odd_num.push(randon_arr[i]);
+                                    }
+                                    summa = summa + randon_arr[i];
+                                }
+                                arrifmetic_mean = summa / N;
+                                document.getElementById("arrays").innerHTML = "N is: " + N + " root array is: " + randon_arr + "<br>" + " The lagest value: " + max + " The lowest value: " + min + " Total summ:" + summa + " Arifmethic mean: " + arrifmetic_mean + "<br>" + " The odd values of array are: " + odd_num ;
+                            } else {
+                                alert("Data type error! Use only numbers!");
+                            }
+                        }
+                </xmp>
+         </div>
+            <div class="output">
+                    <form action="">
+                        <span>Введите N:</span>
+                        <input id="elements" type="text" value=""> <br>
+                        <input type="button" value="Go!"  onclick="array_n()">
+                        <br>
+                         <span>Ответ: </span> <span id="arrays" ></span> 
+                    </form>
+            </div>
+</div>
+<script type="text/javascript" src="./js/task7.js"></script>

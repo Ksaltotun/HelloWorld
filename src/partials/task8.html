@@ -1,0 +1,59 @@
+<h3 >Task8</h3>
+<div class="task">
+        <div class="description">
+                Create a two-dimensional array of 5x5 elements and populate it with
+                arbitrary integer values. <br> On the main diagonal, replace all numbers
+                with the sign (-) by 10, and the numbers with the sign (+) by the
+                number 20.
+                
+         </div>
+         <div class="solution">
+                <xmp>
+                        function number_generator(min, max) {
+                            return Math.floor(Math.random() * (max - min)) + min;
+                          }
+                        function array_nxn () { 
+                            var N = document.getElementById("array_range").value, randon_arr = [], min = 100, max = -100;  
+                            if(Number(N)) {
+                                N = Number(N);
+                                for(i = 0; i < N; i++){
+                                    randon_arr[i] = []; 
+                                    for (j = 0; j < N; j++){
+                                        randon_arr[i][j] = number_generator(-100, 100);
+                                    }
+                                }
+                                document.getElementById("arraysxn").innerHTML = "<br>" + "Исходный массив:" + "<br>";
+                                for (i = 0; i < N; i++){
+                                    document.getElementById("arraysxn").innerHTML += randon_arr[i] + "<br>";
+                                } 
+                                for(i = 0; i < N; i++){
+                                    j = i;
+                                    if(randon_arr[i][j] < 0 ){
+                                        randon_arr[i][j] = 10;
+                                    }
+                                    else if(randon_arr[i][j] > 0) {
+                                        randon_arr[i][j] = 20;
+                                    }
+                                }
+                                document.getElementById("arraysxn").innerHTML += "<br>" + "Конечный массив: " + "<br>";
+                                for (i = 0; i < N; i++){
+                                    document.getElementById("arraysxn").innerHTML +=  randon_arr[i] + "<br>";
+                                } 
+                             } else {
+                                alert("Data type error! Use only numbers!");
+                            }
+                        }
+                        
+                </xmp>
+         </div>
+            <div class="output">
+                    <form action="">
+                        <span>Введите N:</span>
+                        <input id="array_range" type="text" value=""> <br>
+                        <input type="button" value="Go!"  onclick="array_nxn()">
+                        <br>
+                         <span>Ответ: </span> <span id="arraysxn" ></span> 
+                    </form>
+            </div>
+</div>
+<script type="text/javascript" src="./js/task8.js"></script>

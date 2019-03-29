@@ -1,0 +1,34 @@
+<h3 >Task5</h3>
+<div class="task">
+        <div class="description">
+                Write a program that will calculate the factorial of N.
+         </div>
+         <div class="solution">
+                <xmp>
+                        function factorial() { 
+                            var N = document.getElementById("input_N").value, exit_fac = 1;  
+                            
+                            if(Number(N)) {
+                                N = Number(N);
+                                for(i = 1; i < N + 1; i++){
+                                    exit_fac *= i
+                                }
+                                document.getElementById("exit_fac").innerHTML = "Факториал числа: " + exit_fac;
+                            } else {
+                                alert("Data type error! Use only numbers!");
+                            }
+                        }
+                        
+                 </xmp>
+         </div>
+            <div class="output">
+                    <form action="">
+                        <span>Введите N:</span>
+                        <input id="input_N" type="text" value=""> <br>
+                        <input type="button" value="Вычислить!"  onclick="factorial()">
+                        <br>
+                         <span>Ответ: </span> <span id="exit_fac" ></span> 
+                    </form>
+            </div>
+</div>
+<script type="text/javascript" src="./js/task5.js"></script>
