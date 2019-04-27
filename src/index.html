@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./css/common-style.css">
+  <title>Hello world</title>
+</head>
+<body>
+  <h1>Hello world</h1>
+  <div class="burger-nav">
+    <div class="burger-nav__opener"></div>
+    <div class="burger-nav__items">
+      <div class="menu-item">First item</div>
+      <div class="menu-item">Second item</div>
+      <div class="menu-item">Third item</div>
+      <div class="menu-item">Fourth item</div>
+      <div class="menu-item">Fifth item</div>
+    </div>
+  </div>
+<script>
+  var opener = document.querySelector('.burger-nav__opener');
+  var items = document.querySelector('.burger-nav__items');
+
+  function toggleBurger() {
+      opener.classList.toggle('open');
+      items.classList.toggle('open');
+}
+
+opener.addEventListener('click', toggleBurger);
+
+</script>
+</body>
+</html>
